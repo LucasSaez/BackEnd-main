@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Repositorio para trabajos en el area de backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node functions/app.js",
+    "build": "netlify deploy --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Practicas-Profesionalizantes-N-2/BackEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Practicas-Profesionalizantes-N-2/BackEnd/issues"
+  },
+  "homepage": "https://github.com/Practicas-Profesionalizantes-N-2/BackEnd#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0",
+    "serverless-http": "^3.2.0",
+    "socket.io": "4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
