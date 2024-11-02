@@ -46,7 +46,13 @@ class AppServer {
         const httpServer = createServer(this.app);
         
         // Configura Socket.io con WebSocket como transporte preferido
-        const io = new Server(httpServer)
+        const io = new Server(httpServer, {
+            cors:{
+                origin:'*',
+                credentials: true
+            },
+            transports: ['websocket', 'polling']
+        });
     
 
     
